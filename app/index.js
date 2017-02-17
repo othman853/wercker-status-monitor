@@ -1,5 +1,4 @@
-const vpath = require('value-box/path');
-vpath(__dirname, ['/stubs']);
+require('value-box/path')(__dirname, ['/stubs']);
 
 const { wercker } = require('value-box');
 
