@@ -1,0 +1,22 @@
+{
+  "name": "wercker-status-monitor",
+  "version": "1.0.0",
+  "description": "Build monitor alternative for Wercker CI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/othman853/wercker-status-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/othman853/wercker-status-monitor/issues"
+  },
+  "homepage": "https://github.com/othman853/wercker-status-monitor#readme",
+  "dependencies": {
+    "value-box": "^0.12.0"
+  }
+}
