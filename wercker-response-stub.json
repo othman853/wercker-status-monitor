@@ -1,0 +1,362 @@
+[
+  {
+    "id": "58a751212de0ad010015c089",
+    "url": "https://app.wercker.com/api/v3/runs/58a751212de0ad010015c089",
+    "branch": "master",
+    "commitHash": "5d32bc9c0f344d174d229f2c13dba20c52f4e7b4",
+    "createdAt": "2017-02-17T19:38:09.052Z",
+    "finishedAt": "2017-02-17T19:38:57.946Z",
+    "message": "Auto trigger from Pipeline \"unit-test\" to Pipeline \"deploy\"",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T19:38:12.144Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a74a3cf717a60100b9d7cb",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a74a3cf717a60100b9d7cb",
+      "createdAt": "2017-02-17T19:08:44.157Z",
+      "name": "deploy",
+      "permissions": "read",
+      "pipelineName": "deploy",
+      "setScmProviderStatus": false,
+      "type": "pipeline"
+    }
+  },
+  {
+    "id": "58a7510bf717a60100b9db0e",
+    "url": "https://app.wercker.com/api/v3/runs/58a7510bf717a60100b9db0e",
+    "branch": "master",
+    "commitHash": "5d32bc9c0f344d174d229f2c13dba20c52f4e7b4",
+    "createdAt": "2017-02-17T19:37:47.845Z",
+    "finishedAt": "2017-02-17T19:38:08.962Z",
+    "message": "Auto trigger from Pipeline \"build\" to Pipeline \"unit-test\"",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T19:37:50.057Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a734f98974f701002d180c",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a734f98974f701002d180c",
+      "createdAt": "2017-02-17T17:38:01.113Z",
+      "name": "unit-test",
+      "permissions": "read",
+      "pipelineName": "unit_test",
+      "setScmProviderStatus": false,
+      "type": "pipeline"
+    }
+  },
+  {
+    "id": "58a750e7c23792010017a483",
+    "url": "https://app.wercker.com/api/v3/runs/58a750e7c23792010017a483",
+    "branch": "master",
+    "commitHash": "5d32bc9c0f344d174d229f2c13dba20c52f4e7b4",
+    "createdAt": "2017-02-17T19:37:11.543Z",
+    "finishedAt": "2017-02-17T19:37:47.758Z",
+    "message": "Setting specific ruby version on wercker box",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T19:37:28.730Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a610dfeade540100604cb3",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a610dfeade540100604cb3",
+      "createdAt": "2017-02-16T20:51:43.783Z",
+      "name": "build",
+      "permissions": "public",
+      "pipelineName": "build",
+      "setScmProviderStatus": true,
+      "type": "git"
+    }
+  },
+  {
+    "id": "58a74e64fac8900100e8776c",
+    "url": "https://app.wercker.com/api/v3/runs/58a74e64fac8900100e8776c",
+    "branch": "master",
+    "commitHash": "f57587c8e60175d98f0901dbc96d23ee63a98456",
+    "createdAt": "2017-02-17T19:26:28.399Z",
+    "finishedAt": "2017-02-17T19:26:36.840Z",
+    "message": "Adding procfile",
+    "progress": 66,
+    "result": "failed",
+    "startedAt": "2017-02-17T19:26:31.802Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a610dfeade540100604cb3",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a610dfeade540100604cb3",
+      "createdAt": "2017-02-16T20:51:43.783Z",
+      "name": "build",
+      "permissions": "public",
+      "pipelineName": "build",
+      "setScmProviderStatus": true,
+      "type": "git"
+    }
+  },
+  {
+    "id": "58a74ddf2de0ad010015bf57",
+    "url": "https://app.wercker.com/api/v3/runs/58a74ddf2de0ad010015bf57",
+    "branch": "master",
+    "commitHash": "f57587c8e60175d98f0901dbc96d23ee63a98456",
+    "createdAt": "2017-02-17T19:24:15.796Z",
+    "finishedAt": "2017-02-17T19:24:43.523Z",
+    "message": "Adding procfile",
+    "progress": 66,
+    "result": "failed",
+    "startedAt": "2017-02-17T19:24:34.527Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a610dfeade540100604cb3",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a610dfeade540100604cb3",
+      "createdAt": "2017-02-16T20:51:43.783Z",
+      "name": "build",
+      "permissions": "public",
+      "pipelineName": "build",
+      "setScmProviderStatus": true,
+      "type": "git"
+    }
+  },
+  {
+    "id": "58a74cea03f5fd010045ce66",
+    "url": "https://app.wercker.com/api/v3/runs/58a74cea03f5fd010045ce66",
+    "branch": "master",
+    "commitHash": "53c54e11a185ccae33de7e5326c94ecde61d60bc",
+    "createdAt": "2017-02-17T19:20:10.783Z",
+    "finishedAt": "2017-02-17T19:20:58.227Z",
+    "message": "Auto trigger from Pipeline \"unit-test\" to Pipeline \"deploy\"",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T19:20:22.202Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a74a3cf717a60100b9d7cb",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a74a3cf717a60100b9d7cb",
+      "createdAt": "2017-02-17T19:08:44.157Z",
+      "name": "deploy",
+      "permissions": "read",
+      "pipelineName": "deploy",
+      "setScmProviderStatus": false,
+      "type": "pipeline"
+    }
+  },
+  {
+    "id": "58a74cdce560360100d5001f",
+    "url": "https://app.wercker.com/api/v3/runs/58a74cdce560360100d5001f",
+    "branch": "master",
+    "commitHash": "53c54e11a185ccae33de7e5326c94ecde61d60bc",
+    "createdAt": "2017-02-17T19:19:56.091Z",
+    "finishedAt": "2017-02-17T19:20:10.701Z",
+    "message": "Auto trigger from Pipeline \"build\" to Pipeline \"unit-test\"",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T19:19:59.345Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a734f98974f701002d180c",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a734f98974f701002d180c",
+      "createdAt": "2017-02-17T17:38:01.113Z",
+      "name": "unit-test",
+      "permissions": "read",
+      "pipelineName": "unit_test",
+      "setScmProviderStatus": false,
+      "type": "pipeline"
+    }
+  },
+  {
+    "id": "58a74c99f717a60100b9d8c8",
+    "url": "https://app.wercker.com/api/v3/runs/58a74c99f717a60100b9d8c8",
+    "branch": "master",
+    "commitHash": "53c54e11a185ccae33de7e5326c94ecde61d60bc",
+    "createdAt": "2017-02-17T19:18:49.718Z",
+    "finishedAt": "2017-02-17T19:19:55.826Z",
+    "message": "Adding deploy stage to wercker ci",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T19:19:09.295Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a610dfeade540100604cb3",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a610dfeade540100604cb3",
+      "createdAt": "2017-02-16T20:51:43.783Z",
+      "name": "build",
+      "permissions": "public",
+      "pipelineName": "build",
+      "setScmProviderStatus": true,
+      "type": "git"
+    }
+  },
+  {
+    "id": "58a7367603f5fd010045c432",
+    "url": "https://app.wercker.com/api/v3/runs/58a7367603f5fd010045c432",
+    "branch": "master",
+    "commitHash": "0cad6d120f0f4460335c846932ad8ad31a41e1b5",
+    "createdAt": "2017-02-17T17:44:22.802Z",
+    "finishedAt": "2017-02-17T17:44:51.373Z",
+    "message": "Auto trigger from Pipeline \"build\" to Pipeline \"unit-test\"",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T17:44:38.037Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a734f98974f701002d180c",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a734f98974f701002d180c",
+      "createdAt": "2017-02-17T17:38:01.113Z",
+      "name": "unit-test",
+      "permissions": "read",
+      "pipelineName": "unit_test",
+      "setScmProviderStatus": false,
+      "type": "pipeline"
+    }
+  },
+  {
+    "id": "58a736438974f701002d1853",
+    "url": "https://app.wercker.com/api/v3/runs/58a736438974f701002d1853",
+    "branch": "master",
+    "commitHash": "0cad6d120f0f4460335c846932ad8ad31a41e1b5",
+    "createdAt": "2017-02-17T17:43:31.093Z",
+    "finishedAt": "2017-02-17T17:44:22.721Z",
+    "message": "Removing duplication",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2017-02-17T17:44:09.660Z",
+    "status": "finished",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    },
+    "pipeline": {
+      "id": "58a610dfeade540100604cb3",
+      "url": "https://app.wercker.com/api/v3/pipelines/58a610dfeade540100604cb3",
+      "createdAt": "2017-02-16T20:51:43.783Z",
+      "name": "build",
+      "permissions": "public",
+      "pipelineName": "build",
+      "setScmProviderStatus": true,
+      "type": "git"
+    }
+  }
+]
