@@ -4,6 +4,8 @@
   "description": "Build monitor alternative for Wercker CI.",
   "main": "index.js",
   "scripts": {
+    "start": "node app/index.js",
+    "print": "node app/index.js | jq",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
