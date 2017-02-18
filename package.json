@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/othman853/wercker-status-monitor#readme",
   "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "socket.io": "^1.7.3",
     "value-box": "^0.12.0"
   }
 }
