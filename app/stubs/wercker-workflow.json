@@ -1,0 +1,658 @@
+[
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a750e7c23792010017a482",
+    "createdAt": "2017-02-17T19:37:11.533Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "5d32bc9c0f344d174d229f2c13dba20c52f4e7b4",
+      "message": "Setting specific ruby version on wercker box",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a750e7c23792010017a482",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a750e7c23792010017a483"
+        },
+        "id": "58a750e7c23792010017a47f",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:37:47.840Z"
+      },
+      {
+        "data": {
+          "targetName": "unit-test",
+          "pipelineId": "58a734f98974f701002d180c",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a7510bf717a60100b9db0e"
+        },
+        "id": "58a750e7c23792010017a480",
+        "parentItem": "58a750e7c23792010017a47f",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:38:09.088Z"
+      },
+      {
+        "data": {
+          "targetName": "deploy",
+          "pipelineId": "58a74a3cf717a60100b9d7cb",
+          "restricted": false,
+          "totalSteps": 5,
+          "currentStep": 5,
+          "stepName": "store",
+          "runId": "58a751212de0ad010015c089"
+        },
+        "id": "58a750e7c23792010017a481",
+        "parentItem": "58a750e7c23792010017a480",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:38:59.191Z"
+      }
+    ],
+    "startedAt": "2017-02-17T19:37:28.799Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T19:38:58.096Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a74e64fac8900100e8776b",
+    "createdAt": "2017-02-17T19:26:28.388Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "f57587c8e60175d98f0901dbc96d23ee63a98456",
+      "message": "Adding procfile",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a74e64fac8900100e8776b",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 4,
+          "stepName": "bundle-install",
+          "runId": "58a74e64fac8900100e8776c"
+        },
+        "id": "58a74e64fac8900100e87768",
+        "progress": 66,
+        "result": "failed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:26:36.926Z"
+      },
+      {
+        "data": {
+          "targetName": "unit-test",
+          "pipelineId": "58a734f98974f701002d180c",
+          "restricted": false
+        },
+        "id": "58a74e64fac8900100e87769",
+        "parentItem": "58a74e64fac8900100e87768",
+        "progress": 0,
+        "result": "unknown",
+        "status": "notstarted",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:26:28.389Z"
+      },
+      {
+        "data": {
+          "targetName": "deploy",
+          "pipelineId": "58a74a3cf717a60100b9d7cb",
+          "restricted": false
+        },
+        "id": "58a74e64fac8900100e8776a",
+        "parentItem": "58a74e64fac8900100e87769",
+        "progress": 0,
+        "result": "unknown",
+        "status": "notstarted",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:26:28.389Z"
+      }
+    ],
+    "startedAt": "2017-02-17T19:26:31.870Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T19:26:36.921Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a74ddf2de0ad010015bf56",
+    "createdAt": "2017-02-17T19:24:15.787Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "f57587c8e60175d98f0901dbc96d23ee63a98456",
+      "message": "Adding procfile",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a74ddf2de0ad010015bf56",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 4,
+          "stepName": "bundle-install",
+          "runId": "58a74ddf2de0ad010015bf57"
+        },
+        "id": "58a74ddf2de0ad010015bf53",
+        "progress": 66,
+        "result": "failed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:24:43.673Z"
+      },
+      {
+        "data": {
+          "targetName": "unit-test",
+          "pipelineId": "58a734f98974f701002d180c",
+          "restricted": false
+        },
+        "id": "58a74ddf2de0ad010015bf54",
+        "parentItem": "58a74ddf2de0ad010015bf53",
+        "progress": 0,
+        "result": "unknown",
+        "status": "notstarted",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:24:15.788Z"
+      },
+      {
+        "data": {
+          "targetName": "deploy",
+          "pipelineId": "58a74a3cf717a60100b9d7cb",
+          "restricted": false
+        },
+        "id": "58a74ddf2de0ad010015bf55",
+        "parentItem": "58a74ddf2de0ad010015bf54",
+        "progress": 0,
+        "result": "unknown",
+        "status": "notstarted",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:24:15.788Z"
+      }
+    ],
+    "startedAt": "2017-02-17T19:24:34.608Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T19:24:43.669Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a74c99f717a60100b9d8c7",
+    "createdAt": "2017-02-17T19:18:49.707Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "53c54e11a185ccae33de7e5326c94ecde61d60bc",
+      "message": "Adding deploy stage to wercker ci",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a74c99f717a60100b9d8c7",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a74c99f717a60100b9d8c8"
+        },
+        "id": "58a74c99f717a60100b9d8c4",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:19:56.059Z"
+      },
+      {
+        "data": {
+          "targetName": "unit-test",
+          "pipelineId": "58a734f98974f701002d180c",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a74cdce560360100d5001f"
+        },
+        "id": "58a74c99f717a60100b9d8c5",
+        "parentItem": "58a74c99f717a60100b9d8c4",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:20:10.822Z"
+      },
+      {
+        "data": {
+          "targetName": "deploy",
+          "pipelineId": "58a74a3cf717a60100b9d7cb",
+          "restricted": false,
+          "totalSteps": 5,
+          "currentStep": 5,
+          "stepName": "store",
+          "runId": "58a74cea03f5fd010045ce66"
+        },
+        "id": "58a74c99f717a60100b9d8c6",
+        "parentItem": "58a74c99f717a60100b9d8c5",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T19:21:00.621Z"
+      }
+    ],
+    "startedAt": "2017-02-17T19:19:09.370Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T19:20:58.309Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a736438974f701002d1852",
+    "createdAt": "2017-02-17T17:43:31.080Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "0cad6d120f0f4460335c846932ad8ad31a41e1b5",
+      "message": "Removing duplication",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a736438974f701002d1852",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 2,
+          "stepName": "setup environment",
+          "runId": "58a736438974f701002d1853"
+        },
+        "id": "58a736438974f701002d1850",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T17:44:45.500Z"
+      },
+      {
+        "data": {
+          "targetName": "unit-test",
+          "pipelineId": "58a734f98974f701002d180c",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a7367603f5fd010045c432"
+        },
+        "id": "58a736438974f701002d1851",
+        "parentItem": "58a736438974f701002d1850",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T17:44:51.450Z"
+      }
+    ],
+    "startedAt": "2017-02-17T17:44:09.903Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T17:44:51.447Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a734e1c23792010017959f",
+    "createdAt": "2017-02-17T17:37:37.154Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "277cd658d68cbf1c398e115bfffe377a23c30dbb",
+      "message": "Adding unit test pipeline info",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a734e1c23792010017959f",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 7,
+          "currentStep": 5,
+          "stepName": "unit_test",
+          "runId": "58a734e1c2379201001795a0"
+        },
+        "id": "58a734e1c23792010017959e",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T17:38:19.122Z"
+      }
+    ],
+    "startedAt": "2017-02-17T17:37:39.250Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T17:38:09.672Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a732d9056e6d0100481940",
+    "createdAt": "2017-02-17T17:28:57.968Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "787ed6b61a772ab3c278249643b99e349e381dec",
+      "message": "Cleaning wercker yml",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a732d9056e6d0100481940",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 7,
+          "currentStep": 7,
+          "stepName": "store",
+          "runId": "58a732d9056e6d0100481941"
+        },
+        "id": "58a732d9056e6d010048193f",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T17:29:19.657Z"
+      }
+    ],
+    "startedAt": "2017-02-17T17:29:01.218Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T17:29:19.652Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a732b7f717a60100b9ce2b",
+    "createdAt": "2017-02-17T17:28:23.986Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "edf0f01fcd1c03bdbba14ff5eaaf2c67f40b520f",
+      "message": "Adding wercker step",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a732b7f717a60100b9ce2b",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a732b7f717a60100b9ce2c"
+        },
+        "id": "58a732b7f717a60100b9ce2a",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T17:28:42.230Z"
+      }
+    ],
+    "startedAt": "2017-02-17T17:28:26.822Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T17:28:42.227Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a72a5bfac8900100e86aea",
+    "createdAt": "2017-02-17T16:52:43.574Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "b210d4ecbd1317d4e253605bcfb89401e3512536",
+      "message": "Trying to add another step into the wercker 'pipeline'",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a72a5bfac8900100e86aea",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a72a5bfac8900100e86aeb"
+        },
+        "id": "58a72a5bfac8900100e86ae9",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-17T16:53:17.316Z"
+      }
+    ],
+    "startedAt": "2017-02-17T16:53:07.159Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-17T16:53:17.310Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  },
+  {
+    "url": "https://app.wercker.com/api/v3/workflows/58a61428d985050100e35a8d",
+    "createdAt": "2017-02-16T21:05:44.858Z",
+    "data": {
+      "branch": "master",
+      "commitHash": "d19815bd232da90b23b3268e3324abcfd76fe62c",
+      "message": "Adding wercker badge",
+      "scm": {
+        "repository": "ci-with-sinatra",
+        "domain": "github.com",
+        "owner": "othman853",
+        "type": "git"
+      }
+    },
+    "id": "58a61428d985050100e35a8d",
+    "items": [
+      {
+        "data": {
+          "targetName": "build",
+          "pipelineId": "58a610dfeade540100604cb3",
+          "restricted": false,
+          "totalSteps": 6,
+          "currentStep": 6,
+          "stepName": "store",
+          "runId": "58a61428d985050100e35a8e"
+        },
+        "id": "58a61428d985050100e35a8c",
+        "progress": 100,
+        "result": "passed",
+        "status": "finished",
+        "type": "run",
+        "updatedAt": "2017-02-16T21:05:57.733Z"
+      }
+    ],
+    "startedAt": "2017-02-16T21:05:47.142Z",
+    "trigger": "git",
+    "updatedAt": "2017-02-16T21:05:57.730Z",
+    "user": {
+      "meta": {
+        "werckerEmployee": false,
+        "type": "user",
+        "username": "othman853"
+      },
+      "userId": "58a610bdf9f8260100c3018b",
+      "avatar": {
+        "gravatar": "90d3e9458c0a38b1e29aa2453fcb456b"
+      },
+      "name": "othman853",
+      "type": "wercker"
+    }
+  }
+]
