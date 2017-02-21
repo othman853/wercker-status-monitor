@@ -16,8 +16,12 @@ body {
 .build-commit-details {
   display: flex;
   flex-direction: row;
-  height: 40px;
+  height: 75px;
   line-height: 2px;
+}
+
+.build-commit-details h1{
+  font-size: 30px;
 }
 
 .build-commit-details img {
@@ -33,7 +37,7 @@ body {
 .build-info {
   background-color: white;
   width: auto;
-  height: auto;
+  height: 300px;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -50,13 +54,22 @@ body {
 }
 
 .build-stage {
-  width: 220px;
-  height: 100px;
+  width: 350px;
+  height: 200px;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #DDD;
   margin-right: 5px;
   padding: 5px;
+}
+
+.build-stage .build-stage-result {
+  font-size: 35px;
+}
+
+.build-stage .build-stage-name {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .build-stage.passed .build-stage-result {
