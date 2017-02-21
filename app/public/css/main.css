@@ -1,0 +1,66 @@
+body {
+  background-color: #f2f2f2;
+}
+
+#builds {
+  margin-top: 10px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 0;
+  height: 30px;
+}
+
+.build-commit-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.build-commit-details img {
+  width:30px;
+  height:30px;
+  margin-right: 5px;
+}
+
+.build-commit-details .build.commit-hash {
+  font-style: italic;
+}
+
+.build-info {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.build-commit-hash {
+  width: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.build-stages {
+  display: flex;
+  flex-direction: row;
+}
+
+.build-stage {
+  width: 220px;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #DDD;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.build-stage-passed .build-stage-result {
+  color: #00C794;
+}
+
+.build-stage-failed .build-stage-result {
+  color: #FF5C26;
+}

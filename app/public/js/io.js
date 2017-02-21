@@ -1,7 +1,10 @@
-socket.on('update', function(data) {
-  console.log(data);
-});
+const IO = function(socket, dom) {
 
-document
-  .getElementById('refresh')
-  .addEventListener('click', socket.emit.bind(socket, 'refresh'));
+  socket.on('update', function(data) {
+    console.log(data);
+    data.forEach(build => dom.appendBuild(build));
+  });
+
+  dom.setClickById('refresh', socket.emit.bind(socket, 'refresh'));
+
+};

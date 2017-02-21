@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Wercker Build Monitor</title>
-    <link rel="stylesheet" href="/css/bulma.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
 
   <body>
-    <h1>Wercker Build Monitor</h1>
+    <button type="button" id="refresh" class="btn">Refresh</button>
 
-    <button type="button" id="refresh">Refresh</button>
+    <section id="builds">
+    </section>
 
     <script src="/js/socket-client.js"></script>
-    <script type="text/javascript">
-      var socket = io.connect('http://localhost:3000');
-    </script>
+    <script src="/js/templates/build.template.js"></script>
+    <script src="/js/dom.js" charset="utf-8"></script>
     <script src="/js/io.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      const socket = io.connect('http://localhost:3000');
+      const dom = Dom(document);
+      IO(socket, dom);
+    </script>
+
   </body>
 </html>
