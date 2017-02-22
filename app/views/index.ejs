@@ -13,14 +13,24 @@
     <section id="builds">
     </section>
 
+    <div id="host-address" style="display:invisible">
+
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
     <script src="/js/socket-client.js"></script>
     <script src="/js/templates/build.template.js"></script>
     <script src="/js/dom.js" charset="utf-8"></script>
     <script src="/js/io.js" charset="utf-8"></script>
     <script type="text/javascript">
-      const socket = io.connect('http://localhost:3000');
-      const dom = Dom(document);
-      IO(socket, dom);
+      $.get('/host', function(hostInfo) {
+        const socket = io.connect('http://' + hostInfo.ip + ':' + hostInfo.port);
+        const dom = Dom(document);
+        IO(socket, dom);
+      });
     </script>
 
   </body>
