@@ -1,10 +1,8 @@
-const IO = function(socket, dom) {
+const IO = function(socket) {
 
   socket.on('update', function(data) {
+    Builds.runs = Builds.runs.concat(data);
     console.log(data);
-    data.forEach(build => dom.appendBuild(build));
   });
-
-  dom.setClickById('refresh', socket.emit.bind(socket, 'refresh'));
 
 };

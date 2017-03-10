@@ -12,8 +12,7 @@ const pipelines =
 
 const cleanStuff =
   workflow => ({
-    commitMessage: workflow.data.message,
-    commitHash: workflow.data.commitHash,
+    commit: { message: workflow.data.message, hash: workflow.data.commitHash },
     pipelines: pipelines(workflow.items),
     user: workflow.user
   });

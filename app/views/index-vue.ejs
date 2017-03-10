@@ -8,28 +8,27 @@
   </head>
 
   <body>
-    <button type="button" id="refresh" class="btn">Refresh</button>
 
     <section id="builds">
+      <section v-for="run in runs">
+          <commit-info v-bind:commit="run.commit"></commit-info>
+      </section>
     </section>
-
-    <div id="host-address" style="display:invisible">
-
-    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
+    <script src="https://vuejs.org/js/vue.min.js" charset="utf-8"></script>
+
     <script src="/js/socket-client.js"></script>
-    <script src="/js/templates/build.template.js"></script>
-    <script src="/js/dom.js" charset="utf-8"></script>
+    <script src="/js/components.js"></script>
     <script src="/js/io.js" charset="utf-8"></script>
+
     <script type="text/javascript">
       $.get('/host', function(hostInfo) {
         const socket = io.connect('http://' + hostInfo.ip + ':' + hostInfo.port);
-        const dom = Dom(document);
-        IO(socket, dom);
+        IO(socket);
       });
     </script>
 
